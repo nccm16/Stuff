@@ -10,12 +10,10 @@ body {font-family: "Lato", sans-serif;}
 
 /* Style the tab */
 .tab {
-    border: 1px solid black;
     background-color: #FF0000;
     width: 30%;
 }
 .tab1 {
-    border: 1px solid black;
     background-color: #f1f1f1;
     width: 30%;
 }
@@ -62,23 +60,32 @@ body {font-family: "Lato", sans-serif;}
 <body>
 
 <div class="tab">
-  <button class="tablinks button1" onclick="openCity(event, 'London')" id="defaultOpen"></button></div>
+  <button class="tablinks button1" onclick="openCity(event, 'mission 1')" id="defaultOpen">Destroy the Rogue Free Captains!</button></div>
+  
  <div class="tab1">
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button></div><div class="tab1">
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
+  <button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
+  
+  <div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Tokyo</button></div>
+  
+<div class="tab">  
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Tokyo</button></div>
 
-<div id="London" class="tabcontent">
-  <h3></h3>
+<div id="mission 1" class="tabcontent">
+  <h3>D</h3>
   <p>London is the capital city of England.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="mission 2" class="tabcontent">
   <h3>Paris</h3>
   <p>Paris is the capital of France.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="mission 3" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<div id="mission 4" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
