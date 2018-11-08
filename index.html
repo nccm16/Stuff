@@ -46,6 +46,19 @@ body {font-family: "Lato", sans-serif;}
     transition: 0.3s;
     font-size: 17px;
 }
+.tab2 button {
+    float: left;
+    background-color: white;
+    display: block;
+    padding: 22px 16px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
 
 /* Create an active/current "tab button" class */
 .tab button.active {
@@ -58,6 +71,9 @@ body {font-family: "Lato", sans-serif;}
 </style>
 </head>
 <body>
+<div class="tab2">
+  <button class="" onclick="openCity(event, '')" id="defaultOpen"></button></div>
+  
 
 <div class="tab">
   <button class="tablinks button1" onclick="openCity(event, 'mission 1')" id="defaultOpen">Destroy the Rogue Free Captains!</button></div>
@@ -66,14 +82,14 @@ body {font-family: "Lato", sans-serif;}
   <button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
   
   <div class="tab1">
-  <button class="tablinks" onclick="openCity(event, 'mission 3')">Tokyo</button></div>
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div>
   
 <div class="tab">  
-    <button class="tablinks" onclick="openCity(event, 'mission 4')">Tokyo</button></div>
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div>
 
 <div id="mission 1" class="tabcontent">
-  <h3>D</h3>
-  <p>London is the capital city of England.</p>
+  <h1>Destroy the Rogue Free Captains!</h1>
+  <p> <b>location-</b> Somewhere is the disapora <br> <b> Pay- </b> 250 credits <br> <b> description of duties- </b>You will be tasked with the patrol of an area of the diaspora for a rogue free captain. The free captains have been nice enough to prove us with his last known cordinates, where he raided a "protected" merchant. Find him and destroy his ship, upload the footage from your ships camera and payment will be dispensed.</p>
 </div>
 
 <div id="mission 2" class="tabcontent">
