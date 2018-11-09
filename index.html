@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<p>Red = Hell Knight <br> Green = Starfinder
-</p>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
 body {background-color: black;}
 /* Style the tab */
+
 .tab {
     background-color: #FF0000;
     width: 30%;
@@ -18,6 +16,7 @@ body {background-color: black;}
     background-color: #f1f1f1;
     width: 30%;
 }
+
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -29,6 +28,18 @@ body {background-color: black;}
     border: none;
     outline: none;
     text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.ta button {
+    float: left;
+    background-color: black;
+    padding: 22px 16px;
+    width: 0%;
+    height: 0px;
+    border: none;
+    outline: none;
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
@@ -60,52 +71,98 @@ body {background-color: black;}
     transition: 0.3s;
     font-size: 17px;
 }
-
-/* Create an active/current "tab button" class */
+.tab3 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
 .tab button.active {
     background-color: darkred;}
 .tab1 button.active {
     background-color: darkgreen;}
-
-/* Style the tab content */
-
+.tab3 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tab3 button:hover {
+    background-color: #ddd;
+}
+.tab3 button.active {
+    background-color: #ccc;
+}
 </style>
 </head>
 <body>
-<div class="tab2">
-  <button class="" onclick="openCity(event, '')" id="defaultOpen"></button></div>
-  
+<div class="tab3">
+<button class="tablinks" onclick="openCity(event, 'missions');">Missions</button> <!-- missions tab-->
+<button class="tablinks" onclick="openCity(event, 'ship')">Ship status</button><!-- ships tab-->
+<button class="tablinks" onclick="openCity(event, 'ship')">Crew dossier</button></div><!-- ships tab-->
 
+<div id="missions" class="tabcontent">
+<div class="ta">
+  <button class="tablinks" onclick="openCity(event, '')" id="defaultOpen"></button></div><!-- Placeholder-->
 <div class="tab">
-  <button class="tablinks button1" onclick="openCity(event, 'mission 1')" id="defaultOpen">Destroy the Rogue Free Captains!</button></div>
-  
- <div class="tab1">
-  <button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
-  
-  <div class="tab1">
-  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div>
-  
+  <button class="tablinks" onclick="openCity(event, 'mission 1'); " id="defaultOpen">Destroy the Rogue Free Captains! </button></div><!-- mission 1-->
+<div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div><!-- mission 2-->
+<div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div><!-- mission 3-->
 <div class="tab">  
-    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div>
-
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4--></div><!-- missions-->
+<div>     
 <div id="mission 1" class="tabcontent"><font color="white">
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'mission 1'); " id="defaultOpen">Destroy the Rogue Free Captains! </button></div>
+<div class="tab1">
+<button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
+<div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div>
+  <div class="tab">  
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4-->
+  
   <h1>Destroy the Rogue Free Captains!</h1>
-  <p> <b>location-</b> Somewhere is the disapora <br> <b> Pay- </b> 250 credits <br> <b> description of duties- </b>You will be tasked with the patrol of an area of the diaspora for a rogue free captain. The free captains have been nice enough to prove us with his last known cordinates, where he raided a "protected" merchant. Find him and destroy his ship, upload the footage from your ships camera and payment will be dispensed.</p></font>
-</div>
+ <p> <b>location-</b> Somewhere is the disapora <br> <b> Pay- </b> 250 credits <br> <b> description of duties- </b>You will be tasked with the patrol of an area of the diaspora for a rogue free captain. The free captains have been nice enough to prove us with his last known cordinates, where he raided a "protected" merchant. Find him and destroy his ship, upload the footage from your ships camera and payment will be dispensed.</p></font></div><!-- mission 1 description-->
 <div id="mission 2" class="tabcontent"><font color="white">
-  <h3>Uncover Lost Knowledge</h3>
-  <p><b>Location-</b> </p> </font>
-</div>
-
-<div id="mission 3" class="tabcontent">
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'mission 1'); " id="defaultOpen">Destroy the Rogue Free Captains! </button></div>
+<div class="tab1">
+<button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
+<div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div>
+  <div class="tab">  
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4-->
+  <h1>Uncover Lost Knowledge</h1>
+  <p><b>Location-</b> </p> </font></div><!-- mission 2 description-->
+<div id="mission 3" class="tabcontent"><font color="yellow">
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'mission 1'); " id="defaultOpen">Destroy the Rogue Free Captains! </button></div>
+<div class="tab1">
+<button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
+<div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div>
+  <div class="tab">  
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4-->
+  <h1>Tokyo</h1>
+  <p>Tokyo is the capital of Japan.</p></font>
+</div><!-- mission 3 description--> 
+<div id="mission 4" class="tabcontent"><font color="white">
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'mission 1'); " id="defaultOpen">Destroy the Rogue Free Captains! </button></div>
+<div class="tab1">
+<button class="tablinks" onclick="openCity(event, 'mission 2')">Uncover lost knowledge</button></div>
+<div class="tab1">
+  <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div>
+  <div class="tab">  
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4-->
   <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="mission 4" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p> </div>
-
+  <p>Tokyo is the capital of Japan.</p></font></div><!-- mission 4 description-->
+</div><!-- mission info-->
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -123,6 +180,10 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+function myFunction(){
+    openCity(event, 'mission 1');
+    openCity(event, 'missions');
+}
 </script>
      
 </body>
