@@ -6,8 +6,6 @@
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
 body {background-color: black;}
-/* Style the tab */
-
 .tab {
     background-color: #FF0000;
     width: 30%;
@@ -16,9 +14,10 @@ body {background-color: black;}
     background-color: #f1f1f1;
     width: 30%;
 }
-
-
-/* Style the buttons inside the tab */
+.tab4 {
+    background-color: #f1f1f1;
+    width: 30%;
+}
 .tab button {
     float: left;
     background-color: red;
@@ -81,8 +80,6 @@ body {background-color: black;}
     transition: 0.3s;
     font-size: 17px;
 }
-.tab button.active {
-    background-color: darkred;}
 .tab1 button.active {
     background-color: darkgreen;}
 .tab3 {
@@ -96,13 +93,74 @@ body {background-color: black;}
 .tab3 button.active {
     background-color: #ccc;
 }
+.tab4 button:hover {
+    background-color: #ddd;
+}
+.tab4 button.active {
+    background-color: #ccc;
+}
+.tab4 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tab4 button {
+    float: left;
+    padding: 22px 16px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
 </style>
 </head>
 <body>
 <div class="tab3">
 <button class="tablinks" onclick="openCity(event, 'missions');">Missions</button> <!-- missions tab-->
 <button class="tablinks" onclick="openCity(event, 'ship')">Ship status</button><!-- ships tab-->
-<button class="tablinks" onclick="openCity(event, 'ship')">Crew dossier</button></div><!-- ships tab-->
+<button class="tablinks" onclick="openCity(event, 'crew')">Crew dossier</button></div><!-- buttons-->
+<div id="ship" class="tabcontent"><font color="White" face="impact">
+<h1>Dangerzone</h1>
+<b>Frame- </b>Explorer<br>
+<b>Size- </b>Small<br>
+<b>Speed- </b>Ten hexes<br>
+<b>Maneuverability- </b>Good (+1)<br>
+<b>Armor- </b>14 armor <br>
+<b>Targeting defense- </b>12 TL<br>
+<b>Hull integrity- </b>40 HP <br>
+<b>Damage threshold- </b>None <br>
+<b>Critical Threshold- </b>8<br>
+<b>shield total- </b>50 shield points<br>
+<b>Shield recharge rate- </b>2 points a minute<br>
+<b>Shield ratios-</b><br>
+    <ul>
+        <li><b>Forward shields- </b>14 </li>
+        <li><b>Starboard shields- </b>12 </li>
+        <li><b>Aft shields- </b>12 </li>
+        <li><b>Port shields- </b>12 </li>
+    </ul><!-- Shield ratios-->
+<b>Weapons- </b><br>
+    <ul><li><b>Forward- </b>two linked gyrolasers- 1d8 each</li>
+        
+    </ul><!-- Weapons-->
+<b>Computer- </b>Two +1 computer<br>
+<b>Power Core- </b>140 power<br>
+<b>Crew quaters- </b>Good crew quaters<br>
+<b>Sensors- </b>Poor quality short range sensors
+</font></div><!-- ships info-->
+<div id="crew" class="tabcontent">
+<div class="tab4">
+<button class="tablinks" onclick="openCity(event, 'kenneth')">Kenneth Loggins</button>
+<button class="tablinks" onclick="openCity(event, 'daneth')">Daneth Devito</button>    
+<button class="tablinks" onclick="openCity(event, 'irwin')">Something Irwin</button>
+<button class="tablinks" onclick="openCity(event, 'ham')">Ham Ham Taro</button>
+<button class="tablinks" onclick="openCity(event, 'kenneth')">Conspiracy nut</button>
+<button class="tablinks" onclick="openCity(event, 'kenneth')">Android guy</button>
+</div></div><!-- Crew dossier-->
 
 <div id="missions" class="tabcontent">
 <div class="ta">
@@ -163,6 +221,12 @@ body {background-color: black;}
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p></font></div><!-- mission 4 description-->
 </div><!-- mission info-->
+    
+<div id="kenneth" class="tabcontent">
+<font color="white">
+<h1>Captain Kenneth Loggins</h1>
+<h3>Captain, Hell Knight, Man of Leisure</h3>
+</font></div><!-- Kenneth-->
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
