@@ -17,8 +17,7 @@ body {background-color: black;}
 .tab4 {
     background-color: #f1f1f1;
     width: 30%;
-}
-.tab button {
+}.tab button {
     float: left;
     background-color: red;
     padding: 22px 16px;
@@ -30,8 +29,7 @@ body {background-color: black;}
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-}
-.ta button {
+}.ta button {
     float: left;
     background-color: black;
     padding: 22px 16px;
@@ -42,8 +40,7 @@ body {background-color: black;}
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-}
-.tab1 button {
+}.tab1 button {
     float: left;
     background-color: green;
     display: block;
@@ -56,8 +53,7 @@ body {background-color: black;}
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-}
-.tab2 button {
+}.tab2 button {
     float: left;
     background-color: black;
     display: block;
@@ -69,8 +65,7 @@ body {background-color: black;}
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-}
-.tab3 button {
+}.tab3 button {
     background-color: inherit;
     float: left;
     border: none;
@@ -119,49 +114,6 @@ body {background-color: black;}
 </style>
 </head>
 <body>
-<div class="tab3">
-<button class="tablinks" onclick="openCity(event, 'missions');">Missions</button> <!-- missions tab-->
-<button class="tablinks" onclick="openCity(event, 'ship')">Ship status</button><!-- ships tab-->
-<button class="tablinks" onclick="openCity(event, 'crew')">Crew dossier</button></div><!-- buttons-->
-<div id="ship" class="tabcontent"><font color="White" face="impact">
-<h1>Dangerzone</h1>
-<b>Frame- </b>Explorer<br>
-<b>Size- </b>Small<br>
-<b>Speed- </b>Ten hexes<br>
-<b>Maneuverability- </b>Good (+1)<br>
-<b>Armor- </b>14 armor <br>
-<b>Targeting defense- </b>12 TL<br>
-<b>Hull integrity- </b>40 HP <br>
-<b>Damage threshold- </b>None <br>
-<b>Critical Threshold- </b>8<br>
-<b>shield total- </b>50 shield points<br>
-<b>Shield recharge rate- </b>2 points a minute<br>
-<b>Shield ratios-</b><br>
-    <ul>
-        <li><b>Forward shields- </b>14 </li>
-        <li><b>Starboard shields- </b>12 </li>
-        <li><b>Aft shields- </b>12 </li>
-        <li><b>Port shields- </b>12 </li>
-    </ul><!-- Shield ratios-->
-<b>Weapons- </b><br>
-    <ul><li><b>Forward- </b>two linked gyrolasers- 1d8 each</li>
-        
-    </ul><!-- Weapons-->
-<b>Computer- </b>Two +1 computer<br>
-<b>Power Core- </b>140 power<br>
-<b>Crew quaters- </b>Good crew quaters<br>
-<b>Sensors- </b>Poor quality short range sensors
-</font></div><!-- ships info-->
-<div id="crew" class="tabcontent">
-<div class="tab4">
-<button class="tablinks" onclick="openCity(event, 'kenneth')">Kenneth Loggins</button>
-<button class="tablinks" onclick="openCity(event, 'daneth')">Daneth Devito</button>    
-<button class="tablinks" onclick="openCity(event, 'felix')">Felix Irwin</button>
-<button class="tablinks" onclick="openCity(event, 'ham')">Ham Ham Taro</button>
-<button class="tablinks" onclick="openCity(event, 'tom')">Tom Cruise</button>
-<button class="tablinks" onclick="openCity(event, 'android')">Android guy</button>
-</div></div><!-- Crew dossier-->
-
 <div id="missions" class="tabcontent">
 <div class="ta">
   <button class="tablinks" onclick="openCity(event, '')" id="defaultOpen"></button></div><!-- Placeholder-->
@@ -172,7 +124,7 @@ body {background-color: black;}
 <div class="tab1">
   <button class="tablinks" onclick="openCity(event, 'mission 3')">Recover a lost vessel</button></div><!-- mission 3-->
 <div class="tab">  
-    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4--></div><!-- missions-->
+    <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4--></div><!--missions-->
 <div>     
 <div id="mission 1" class="tabcontent"><font color="white">
 <div class="tab">
@@ -220,8 +172,75 @@ body {background-color: black;}
     <button class="tablinks" onclick="openCity(event, 'mission 4')">Find the missing research team</button></div><!-- mission 4-->
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p></font></div><!-- mission 4 description-->
-</div><!-- mission info-->
-    
+</div><!--mission info-->
+<div class="tab3">
+<button class="tablinks" onclick="openCity(event, 'missions');">Missions</button> <!-- missions tab-->
+<button class="tablinks" onclick="openCity(event, 'ship')">Ship status</button><!-- ships tab-->
+<button class="tablinks" onclick="openCity(event, 'crew')">Crew dossier</button>
+<button class="tablinks" onclick="openCity(event, 'planets');">Planets</button></div><!--buttons-->
+<div id="ship" class="tabcontent"><font color="White" face="impact">
+<h1>Dangerzone</h1>
+<b>Frame- </b>Explorer<br>
+<b>Size- </b>Small<br>
+<b>Speed- </b>Ten hexes<br>
+<b>Maneuverability- </b>Good (+1)<br>
+<b>Armor- </b>14 armor <br>
+<b>Targeting defense- </b>12 TL<br>
+<b>Hull integrity- </b>40 HP <br>
+<b>Damage threshold- </b>None <br>
+<b>Critical Threshold- </b>8<br>
+<b>shield total- </b>50 shield points<br>
+<b>Shield recharge rate- </b>2 points a minute<br>
+<b>Shield ratios-</b><br>
+    <ul>
+        <li><b>Forward shields- </b>14 </li>
+        <li><b>Starboard shields- </b>12 </li>
+        <li><b>Aft shields- </b>12 </li>
+        <li><b>Port shields- </b>12 </li>
+    </ul><!-- Shield ratios-->
+<b>Weapons- </b><br>
+    <ul><li><b>Forward- </b>two linked gyrolasers- 1d8 each</li>
+        
+    </ul><!-- Weapons-->
+<b>Computer- </b>Two +1 computer<br>
+<b>Power Core- </b>140 power<br>
+<b>Crew quaters- </b>Good crew quaters<br>
+<b>Sensors- </b>Poor quality short range sensors
+</font></div><!--ships info-->
+<div id="crew" class="tabcontent tab4">
+<button class="tablinks" onclick="openCity(event, 'kenneth')">Kenneth Loggins</button>
+<button class="tablinks" onclick="openCity(event, 'daneth')">Daneth Devito</button>    
+<button class="tablinks" onclick="openCity(event, 'felix')">Felix Irwin</button>
+<button class="tablinks" onclick="openCity(event, 'ham')">Ham Ham Taro</button>
+<button class="tablinks" onclick="openCity(event, 'tom')">Tom Cruise</button>
+<button class="tablinks" onclick="openCity(event, 'android')">Android guy</button>
+</div><!--Crew dossier-->
+<div id="planets" class="tabcontent tab4">
+  <button class="tablinks" onclick="openCity(event, 'sun')" id="defaultOpen">The sun</button>
+  <button class="tablinks" onclick="openCity(event, 'aballon'); " id="defaultOpen">Aballon</button>
+  <button class="tablinks" onclick="openCity(event, 'castrovel')">Castrovel</button>
+  <button class="tablinks" onclick="openCity(event, 'absalom')">Absalom station</button>
+    <button class="tablinks" onclick="openCity(event, 'akiton')">Akiton</button>
+    <button class="tablinks" onclick="openCity(event, 'verces')">Verces</button>
+    <button class="tablinks" onclick="openCity(event, 'idari')">Idari</button>
+    <button class="tablinks" onclick="openCity(event, 'diaspora')">The Diaspora</button>
+    <button class="tablinks" onclick="openCity(event, 'eox')">Eox </button>
+    <button class="tablinks" onclick="openCity(event, 'triaxus')">Triaxus</button>
+    <button class="tablinks" onclick="openCity(event, 'liavara')">Liavara</button>
+    <button class="tablinks" onclick="openCity(event, 'bretheda')">Bretheda</button>
+    <button class="tablinks" onclick="openCity(event, 'apostae')">Apostae</button>
+    <button class="tablinks" onclick="openCity(event, 'aucturn')">Aucturn</button>
+    </div><!--planets-->
+<div id="sun" class="tabcontent">
+<font color="white">
+<h1>The sun</h1>
+<h2>Discovery</h2>
+About a century ago a series of protected bubbles were found floating within the sun, sun protective channels were found that led to these bubbles. Over the next years pioneers, worshippers and scientists have migrated to live on these bubbles, aptly named the burning archipelago. The study to find who made these bubbles continues but no one has made any progress.The sun is used as a tourist spot, mining operation and sometimes beings who live on the sun come as diplomats. 
+<h2>Geography- </h2>The sun is an always changing landscape, sunspots and solar flares dot the surface, where large amounts of energy ripped open portals to the fire plane for brief periods of time. The burning archipelago is considerbly more stable then the sun, consisting of force bubbles with towns or platforms suspended within. The study of these bubbles proves unfruitful, with the common idea of these bubbles being magical in nature. Even though scientists do not know how these bubbles are made, the study provides great deal of insight into other studies. Movement from bubble to bubble is done through a type of ferrie named "line-huggers" that use the connections between the bubbles to travel.
+<h2>Residents- </h2>
+</font></div><!-- The sun-->    
+
+<div>
 <div id="kenneth" class="tabcontent">
 <font color="white">
 <h1>Captain Kenneth Loggins</h1>
@@ -314,7 +333,7 @@ body {background-color: black;}
     <li>(Current) Starfinder society</li>
 </ul>
 <b>Mission- </b>Assist the firstseeker in their research and explore the galaxy
-</font></div><!-- android-->
+</font></div><!-- android--></div><!--crew descriptions-->
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -332,11 +351,7 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-function myFunction(){
-    openCity(event, 'mission 1');
-    openCity(event, 'missions');
-}
-</script>
-     
+
+</script><!-- This code is held together by the coding equivalent of glue and duct tape, don't touch.-->
 </body>
 </html> 
